@@ -31,6 +31,201 @@
 
     <!-- Etiqueta imagen-->
     <!-- Imágenes externas -->
-    <img src="" alt="" />
+    <img
+      src="https://images.pexels.com/photos/7829101/pexels-photo-7829101.jpeg"
+      alt="Imagen de Grogu de StarWars, muy coqueto y alegre."
+      width="200px"
+    />
+    <!-- El atributo width se quitará al aplicar los estilos css-->
+
+    <!-- Imágenes locales -->
+    <img
+      src="img/pexels-kunal-lakhotia-781256899-19127796.jpg"
+      alt="Yo soy Groot"
+      width="200px"
+    />
+
+    <!-- Listas -->
+    <!-- Ordenadas -->
+    <h3>Listas ordenadas</h3>
+    <ol>
+      <li>Darth Vader</li>
+      <li>Anakin Skywalker</li>
+      <li>Luke Skywalker</li>
+      <li>Leia Skywalker</li>
+    </ol>
+
+    <!-- Desordenadas -->
+    <ul>
+      <li>Yoda</li>
+      <li>Obi Wan Kenobi</li>
+      <li>Otros maestros Jedi</li>
+    </ul>
+
+    <!-- Atributos Globales -->
+    <!--
+      Atributo ID (id)
+      Sintaxis: <open_label id="nombre-id-unico">
+      Ejemplo: <p id="name">
+      
+      Descripción: Generamos una única identidad al elemento html para dirigirnos directamente a el. Puede ser desde CSS, href, javascript, etc...
+
+      Atibuto class
+      Sintaxis: <open_label class="nombre-clase">
+      Ejemplo: <p class="cita">
+               <p class="cita">
+               <div class="cita">
+      
+      Descripción: es un identificador de grupo, se puede especificar el mismo nombre a varios elementos o grupo de elementos del html. Ideal para dar estilos de forma uniforme o asignarle cambios desde javascript.
+     -->
+
+    <!-- Estructuración del contenido -->
+    <!-- Contenedores vacíos -->
+
+    <!-- Etiqueta <div> Contenedor de almacenamiento para agrupar bloques de elementos y/o contenido -->
+    <h2>Etiqueta div agrupar contenido</h2>
+    <div class="article">
+      <div class="figure">
+        <img
+          src="img/pexels-kunal-lakhotia-781256899-19127796.jpg"
+          alt="Imagen del post"
+          width="100px"
+        />
+        <h4>Título del Post</h4>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
+          voluptate dolore mollitia. Ullam hic asperiores accusantium magnam id
+          autem voluptate repellat blanditiis, expedita reiciendis, laboriosam
+          nihil cumque libero laborum! Debitis.
+        </p>
+      </div>
+    </div>
+
+    <!-- span - se usa para los detalles, agrupa contenido en línea dentro de otros elementos.
+     Sirve para aplicar estilos a fragmentos de texto o pequeños componentes sin alterar el flujo del documento html -->
+    <h2>Etiqueta span</h2>
+    <p>Hola, <span id="name"> nombre </span></p>
+    <p>
+      Esto es un <span class="texto-destacado">texto destacado</span> dentro de
+      un párrafo.
+    </p>
+
+    <!-- HTML Semántico -->
+
+    <h2>Ejemplo html semántico</h2>
+    <header>
+      <figure id="logo">
+        <img src="" alt="" />
+      </figure>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>about us</li>
+          <li>blog</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <figure id="hero-background">
+          <img
+            src="img/pexels-kunal-lakhotia-781256899-19127796.jpg"
+            alt="Backgraund Hero"
+            width="300px"
+          />
+        </figure>
+        <div id="hero-text">
+          <h1>Título de la página</h1>
+          <h3>Si puedes imaginarlo y soñarlo, puedes crearlo y programarlo</h3>
+          <h3>Dacă ți-l poți imagina și visa, îl poți crea și programa.</h3>
+        </div>
+      </section>
+
+      <section id="blog">
+        <article>
+          <figure>
+            <img
+              src="img/pexels-kunal-lakhotia-781256899-19127796.jpg"
+              alt="Imagen del post"
+              width="100px"
+            />
+          </figure>
+          <h3>Título del blog</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            assumenda similique, commodi optio fuga sed est animi in temporibus
+            fugiat, non repudiandae, provident maxime hic molestiae dolorum
+            repellat nesciunt voluptate!
+          </p>
+        </article>
+
+        <article>
+          <figure>
+            <img
+              src="img/pexels-kunal-lakhotia-781256899-19127796.jpg"
+              alt="Imagen del post"
+              width="100px"
+            />
+          </figure>
+          <h3>Título del blog</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            assumenda similique, commodi optio fuga sed est animi in temporibus
+            fugiat, non repudiandae, provident maxime hic molestiae dolorum
+            repellat nesciunt voluptate!
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div id="left-part">
+        <h4>Suscríbete</h4>
+        <input type="email" placeholder="Email aquí" />
+      </div>
+
+      <div id="right-part">
+        <h4>Redes Sociales</h4>
+        <ul>
+          <li>Github</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Formularios -->
+    <!-- Sirven para poder recopilar información del usuario -->
+
+    <h3>Formularios en HTML</h3>
+    <form action="script.js" method="post">
+      <label for="name">Nombre: </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Escribe tu nombre"
+      />
+
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Escribe tu correo"
+      />
+
+      <label for="password">Contraseña: </label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Contraseña"
+      />
+
+      <button type="submit">Enviar formulario</button>
+      <button type="reset">Borrar formulario</button>
+    </form>
   </body>
 </html>
