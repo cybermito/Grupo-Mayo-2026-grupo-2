@@ -1,0 +1,61 @@
+/* Tipos de selectores en CSS */
+
+/* Selector universal */
+* {
+  color: green;
+}
+
+/* Selectores de tipo o de elemento */
+p {
+  margin-bottom: 30px;
+  border: 1px solid rgb(246, 2, 116);
+  padding: 5px;
+}
+
+/* Selectores de clase */
+/*
+Sintaxis: 
+.nombreClase{}
+*/
+
+.rojo {
+  color: red;
+}
+
+.grande {
+  font-size: 30px;
+}
+
+.container {
+  border: 4px solid lightsalmon;
+}
+
+/* Selector de ID */
+/*
+Sintaxis: 
+#nombreId{}
+*/
+#unico {
+  background-color: bisque;
+}
+
+/*Selectores descencientes*/
+/* Aplica estilos a todos los hijos directos e indirectos del elemento seleccionado */
+
+.container p {
+  color: lightgreen;
+  font-weight: bold;
+}
+
+/* Hijo directo */
+/* Aplica estilos solamente a los hijos directos del elemento padre seleccionado */
+.container > p {
+  font-size: 40px;
+}
+
+/* Elemento Adyadcente */
+/* Aplica estilos al elemento adyadcente al indicado por debajo de este.*/
+
+p + .container {
+  background-color: lightgoldenrodyellow;
+}

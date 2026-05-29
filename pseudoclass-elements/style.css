@@ -1,0 +1,89 @@
+/* Configuramos primero los estilos básicos y generales de la página */
+/* Mai întâi configurăm stilurile de bază și generale ale paginii */
+
+* {
+  background: black;
+  color: greenyellow;
+}
+
+html {
+  font-family: monospace;
+}
+
+div {
+  width: 100%;
+  background: rgb(50, 51, 49);
+  padding: 15px;
+}
+
+input {
+  margin-top: 15px;
+  padding: 15px;
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+}
+
+/* Convertimos con estilos un enlace (a) en un botón aparente */
+
+a {
+  width: 150px;
+  background: chartreuse;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+}
+/* Fin de estilos generales */
+/* Pseudo-class*/
+/* Cuando algo ocurre (un evento) modificamos los estilos, también según la posición del documento */
+/* Sintaxis: selector:pseudo-class{} */
+
+a:hover {
+  background: green;
+  color: grey;
+  box-shadow: 4px 2px lightgreen;
+}
+
+input:focus {
+  background-color: lightgoldenrodyellow;
+  color: lightsalmon;
+}
+
+div p:nth-child(3) {
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Podemos combinar las pseudo-class */
+
+div p:nth-child(1):hover {
+  color: rgb(250, 1, 76);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Pseudo-elements */
+/*Aplica los estilos o añadimos contenido al elemento indicado */
+/*Sintaxis: selector::pseudo-element{}
+*/
+p::first-letter {
+  color: rgb(250, 1, 76);
+  font-size: 25px;
+}
+
+p::before {
+  content: '🇷🇴 👉 ';
+}
+
+p::after {
+  content: ' 💜';
+}
+
+::placeholder {
+  color: white;
+  background-color: lightcoral;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}

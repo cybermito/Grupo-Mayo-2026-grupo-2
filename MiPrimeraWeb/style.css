@@ -1,0 +1,30 @@
+/*
+Comentarios en la hoja de estilos
+*/
+
+/*
+Sintaxis:
+selector {
+    propiedad1:valor1;
+    propiedad2:valor2;
+    propiedad-n:valor-n;
+}
+*/
+p {
+  background: lightgoldenrodyellow;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Vamos a convertir un enlace en un botón */
+/* Să transformăm un link într-un buton */
+
+a {
+  text-decoration: none;
+  font-family: monospace;
+  color: rgb(246, 32, 75);
+  padding: 10px;
+  background: lightgrey;
+  margin: 10px 5px;
+}
