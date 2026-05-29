@@ -1,0 +1,97 @@
+/* Reset style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos principales */
+
+html {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+body {
+  background: black;
+  color: greenyellow;
+}
+
+/* Si hay varios elementos que comparten estilos, se puede poner seguidos y separados por coma (,) para aplicárselos. */
+
+h1,
+h2 {
+  margin: 20px 0;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+}
+
+/* Modelo de caja visual */
+.box-model {
+  margin-bottom: 30px;
+}
+
+.content {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid chartreuse;
+  margin: 5px;
+  background: rgb(69, 108, 12);
+  color: white;
+  text-align: center;
+}
+
+/* CONTENT-BOX VS BORDER-BOX */
+
+.content-box {
+  box-sizing: content-box; /*Valor por defecto
+    width = contenido */
+  width: 200px;
+  padding: 20px;
+  border: 5px solid green;
+  margin-bottom: 20px;
+  background-color: greenyellow;
+  color: black;
+}
+
+.border-box {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 5px solid green;
+  margin-bottom: 20px;
+  background-color: greenyellow;
+  color: black;
+}
+
+/* PADDING VS MARGIN */
+
+.only-padding {
+  padding: 30px;
+  background-color: greenyellow;
+  color: black;
+}
+
+.only-margin {
+  margin: 30px;
+  background: greenyellow;
+  color: black;
+}
+
+/*======================
+BOX MODEL:
+
+CONTENT -> El contenido
+PADDING -> El espacio interior
+BORDER  -> El borde
+MARGIN  -> Espacio exterior
+
+box-sizing:
+- content-box (default) suma todos los valores
+- border-box (recomendado) ancho real
+*/
